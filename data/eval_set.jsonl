@@ -1,0 +1,5 @@
+{"question": "What is the refund policy?", "answer_contains": "refund"}
+{"question": "How do I reset my password?", "answer_contains": "password"}
+{"question": "What are your business hours?", "answer_contains": "hours"}
+{"question": "How do I contact support?", "answer_contains": "support"}
+{"question": "What payment methods are accepted?", "answer_contains": "payment"}

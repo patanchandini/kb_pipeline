@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.pyc
+.pyd
+.pyo
+
+# Virtual environment
+.venv/
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Project runtime data — do NOT commit
+data/kb.db
+data/kb.db-journal
+data/snapshots/
+data/quarantine/
+data/docs/*.log
+
+# Logs
+*.log
+logs/
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# Secrets — never commit these
+secrets.yaml
+config.local.yaml
