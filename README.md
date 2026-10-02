@@ -6,10 +6,13 @@ activates them only inside a maintenance window, and auto-rolls back on health-c
 failure. Serves retrieval-augmented chat with access control, prompt-injection
 protection, sensitive-data masking, and Prometheus metrics.
 
+**🔗 Live demo:** [kb-pipeline.onrender.com](https://kb-pipeline.onrender.com)
+
+**📖 API docs:** [kb-pipeline.onrender.com/docs](https://kb-pipeline.onrender.com/docs)
+
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110-009688.svg)](https://fastapi.tiangolo.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 ---
 
 ## Table of Contents

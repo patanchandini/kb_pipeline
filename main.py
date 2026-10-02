@@ -1,3 +1,4 @@
+import os
 import threading
 import logging
 
@@ -29,9 +30,12 @@ def main():
     sched.start()
     log.info("Scheduler started (cron=%s)", CFG.schedule.daily_update_cron)
 
+    # Uvicorn — read PORT from env (Render sets this dynamically)
     import uvicorn
+    port = int(os.environ.get("PORT", 8000))
+    log.info("Starting Uvicorn on port %d", port)
     try:
-        uvicorn.run("kb.runtime:app", host="0.0.0.0", port=8000, reload=False)
+        uvicorn.run("kb.runtime:app", host="0.0.0.0", port=port, reload=False)
     finally:
         stop.set()
         sched.shutdown(wait=False)
